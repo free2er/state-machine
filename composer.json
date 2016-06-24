@@ -1,7 +1,7 @@
 {
     "name": "free2er/state-machine",
     "type": "library",
-    "description": "PHP Finite-state machine",
+    "description": "PHP Finite state machine",
     "license": "MIT",
     "authors": [
         {
