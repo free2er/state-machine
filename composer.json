@@ -1,0 +1,40 @@
+{
+    "name": "free2er/state-machine",
+    "type": "library",
+    "description": "PHP Finite-state machine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Pryakhin",
+            "email": "m.pryakhin@gmail.com"
+        },
+        {
+            "name": "Roman Konovaltsev",
+            "email": "rkonovaltsev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "zendframework/zend-eventmanager": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4",
+        "squizlabs/php_codesniffer": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Free2er\\": "src/Free2er/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Free2er\\": "test/Free2er/"
+        }
+    },
+    "scripts": {
+        "check": ["@cs", "@test"],
+        "cs": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit"
+    }
+}
